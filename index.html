@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Game</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/game.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron customjumbotron">
+    <h1 class="text-center">jQuery Game</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="superman" life="350" power="50" inc="50">
+            <div class="card">
+                <h3 class="card-header">Superman</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/superman.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary heroe" value="superman">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="batman" life="200" power="70" inc="70">
+            <div class="card">
+                <h3 class="card-header">Batman</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/batman.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary heroe" value="batman">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="deadpool"  life="250" power="60" inc="60">
+            <div class="card">
+                <h3 class="card-header">Deadpool</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/deadpool.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary heroe" value="deadpool">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="ironman" life="300" power="80" inc="40">
+            <div class="card">
+                <h3 class="card-header">Iron Man</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/iron-man.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary heroe" value="ironman">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1 enemy">
+            <h2>VS</h2>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 enemy" value="superman">
+            <div class="card">
+                <h3 class="card-header">Superman</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/superman.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6" life="350">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6" power="50">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6" inc="50">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary attack" value="superman">Attack</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-12 col-md-6 col-lg-3 enemy" value="batman">
+            <div class="card">
+                <h3 class="card-header">Batman</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/batman.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary attack" value="batman">Attack</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-12 col-md-6 col-lg-3 enemy" value="deadpool">
+            <div class="card">
+                <h3 class="card-header">Deadpool</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/deadpool.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary attack" value="deadpool">Attack</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-12 col-md-6 col-lg-3 enemy" value="ironman">
+            <div class="card">
+                <h3 class="card-header">Iron Man</h3>
+        
+                <div class="container-fluid">
+                    <div class="row" style="width: 100%">
+                        <div class="col-12">
+                            <img src="./assets/images/iron-man.jpg" class="heroeimage">
+                        </div>
+                        <div class="col-6">
+                            <h4>LIFE:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>350</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>POW:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>INC:</h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>50-70</h4>
+                        </div>
+                        <div class="col-12">
+                            <button id="button-1" class="btn btn-primary attack" value="ironman">Choose</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
