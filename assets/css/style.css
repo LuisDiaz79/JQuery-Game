@@ -9,3 +9,6 @@
 .enemy{
     display: none;
 }
+.card{
+    height: 100%;
+}

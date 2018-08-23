@@ -17,12 +17,12 @@
 
 <!-- Jumbotron for Title -->
 <div class="jumbotron customjumbotron">
-    <h1 class="text-center">jQuery Game</h1>
+    <h1 class="text-center">Who is the best heroe?</h1>
 </div>
 
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-3 myheroe" value="superman" life="350" power="50" inc="50">
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="superman">
             <div class="card">
                 <h3 class="card-header">Superman</h3>
         
@@ -35,19 +35,19 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="superman_life">300</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
+                            <h4 id="superman_power">35</h4>
                         </div>
                         <div class="col-6">
                             <h4>INC:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="superman_inc">12-18</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary heroe" value="superman">Choose</button>
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 myheroe" value="batman" life="200" power="70" inc="70">
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="batman">
             <div class="card">
                 <h3 class="card-header">Batman</h3>
         
@@ -70,19 +70,19 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="batman_life">200</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
+                            <h4 id="batman_power">40</h4>
                         </div>
                         <div class="col-6">
                             <h4>INC:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="batman_inc">30-35</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary heroe" value="batman">Choose</button>
@@ -92,7 +92,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 myheroe" value="deadpool"  life="250" power="60" inc="60">
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="deadpool">
             <div class="card">
                 <h3 class="card-header">Deadpool</h3>
         
@@ -105,19 +105,19 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="deadpool_life">350</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
+                            <h4 id="deadpool_power">20</h4>
                         </div>
                         <div class="col-6">
                             <h4>INC:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="deadpool_inc">8-15</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary heroe" value="deadpool">Choose</button>
@@ -127,7 +127,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-3 myheroe" value="ironman" life="300" power="80" inc="40">
+        <div class="col-12 col-md-6 col-lg-3 myheroe" value="ironman">
             <div class="card">
                 <h3 class="card-header">Iron Man</h3>
         
@@ -140,19 +140,19 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="ironman_life">250</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
+                            <h4 id="ironman_power">30</h4>
                         </div>
                         <div class="col-6">
                             <h4>INC:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="ironman_inc">15-20</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary heroe" value="ironman">Choose</button>
@@ -161,10 +161,11 @@
                 </div>
             </div>
         </div>
-
-        <div class="col-1 enemy">
-            <h2>VS</h2>
-        </div>
+    </div>
+    <div class="col-12">
+        &nbsp;
+    </div>
+    <div class="row">
 
         <div class="col-12 col-md-6 col-lg-3 enemy" value="superman">
             <div class="card">
@@ -178,20 +179,14 @@
                         <div class="col-6">
                             <h4>LIFE:</h4>
                         </div>
-                        <div class="col-6" life="350">
-                            <h4>350</h4>
+                        <div class="col-6">
+                            <h4 id="superman_life">300</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
-                        <div class="col-6" power="50">
-                            <h4>50</h4>
-                        </div>
                         <div class="col-6">
-                            <h4>INC:</h4>
-                        </div>
-                        <div class="col-6" inc="50">
-                            <h4>50-70</h4>
+                            <h4 id="superman_power">35</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary attack" value="superman">Attack</button>
@@ -214,19 +209,13 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="batman_life">200</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
-                        </div>
-                        <div class="col-6">
-                            <h4>INC:</h4>
-                        </div>
-                        <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="batman_power">40</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary attack" value="batman">Attack</button>
@@ -249,19 +238,13 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="deadpool_life">350</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
-                        </div>
-                        <div class="col-6">
-                            <h4>INC:</h4>
-                        </div>
-                        <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="deadpool_power">20</h4>
                         </div>
                         <div class="col-12">
                             <button id="button-1" class="btn btn-primary attack" value="deadpool">Attack</button>
@@ -284,28 +267,30 @@
                             <h4>LIFE:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>350</h4>
+                            <h4 id="ironman_life">250</h4>
                         </div>
                         <div class="col-6">
                             <h4>POW:</h4>
                         </div>
                         <div class="col-6">
-                            <h4>50</h4>
-                        </div>
-                        <div class="col-6">
-                            <h4>INC:</h4>
-                        </div>
-                        <div class="col-6">
-                            <h4>50-70</h4>
+                            <h4 id="ironman_power">30</h4>
                         </div>
                         <div class="col-12">
-                            <button id="button-1" class="btn btn-primary attack" value="ironman">Choose</button>
+                            <button id="button-1" class="btn btn-primary attack" value="ironman">Attack</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+    </div>
+    <div class="row">
+        <div class="col-12">
+            &nbsp;
+        </div>
+        <div class="col-12 text-right">
+                <button type="button" class="btn btn-secondary"  onClick="history.go(0)">Finish</button>
+        </div>
     </div>
 </div>
 
