@@ -8,6 +8,7 @@
 }
 .enemy{
     display: none;
+    color: darkblue;
 }
 .card{
     height: 100%;
